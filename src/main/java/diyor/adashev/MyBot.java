@@ -133,6 +133,20 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
+            if (data.equals("ElektronKartaId")){
+                try {
+                    execute(myBotService.elektronKarta(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("OrqagaToShoxMedKarta")){
+                try {
+                    execute(myBotService.shoxMedkartasiMenu(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
             if (data.equals("TafsilotlarId")){
                 EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
                 editMessageReplyMarkup.setChatId(chatId);
