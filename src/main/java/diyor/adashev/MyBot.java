@@ -199,7 +199,76 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
-
+            if (data.equals("MSKTId")){
+                try {
+                    execute(myBotService.filial(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("MRTId")){
+                try {
+                    execute(myBotService.filial(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("UZIId")){
+                try {
+                    execute(myBotService.filial(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("RENTGENId")){
+                try {
+                    execute(myBotService.filial(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("MutaxassislarId")){
+                try {
+                    execute(myBotService.filial(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("QaytishToQabulId")){
+                try {
+                    execute(myBotService.qabul(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("ShoxMedCenterId")){
+                try {
+                    execute(myBotService.qabulTel(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("ShoxIntHospitalId")){
+                try {
+                    execute(myBotService.qabulTel(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("MedZdarSemyaId")){
+                try {
+                    execute(myBotService.qabulTel(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("ShoxPediatriyaId")){
+                try {
+                    execute(myBotService.qabulTel(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
         }
 
     }
